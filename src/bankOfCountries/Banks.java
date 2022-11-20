@@ -1,13 +1,24 @@
 package bankOfCountries;
 
-public class AkBank implements Bank {
-    private final String name = "Akbank";
-    private final int bankBonus = 100;
+public class Banks implements Bank{
+    private String name;
+    private int bankBonus;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getBankBonus() {
+        return bankBonus;
+    }
+
+    public void setBankBonus(int bankBonus) {
+        this.bankBonus = bankBonus;
+    }
 
     public String getName() {
         return name;
     }
-
     @Override
     public void giveBonus(WorkerPerson workerPerson) {
         Company company = workerPerson.getCompany();
