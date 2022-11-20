@@ -2,21 +2,21 @@ package bankOfCountries;
 
 public class BankOfTest {
     public static void main(String[] args) {
-    CBA CBA = new CBA();
-    ABC ABC = new ABC();
-    CBA.setName("cba");
-    ABC.setName("abc");
 
-    WorkerPerson erdo1 = new WorkerPerson(CBA);
-    WorkerPerson erdo2 = new WorkerPerson(ABC);
-    WorkerPerson fatih = new WorkerPerson(CBA);
-    WorkerPerson furkan = new WorkerPerson(ABC);
+    CompanyFactory abc = new CompanyFactory("abc", 150);
+    CompanyFactory fairy = new CompanyFactory("fairy", 400);
 
-    Banks z1 = new Banks();
+
+    WorkerPerson erdo1 = new WorkerPerson(abc);
+    WorkerPerson erdo2 = new WorkerPerson(abc);
+    WorkerPerson fatih = new WorkerPerson(fairy);
+    WorkerPerson furkan = new WorkerPerson(fairy);
+
+    BankFactory z1 = new BankFactory();
     z1.setName("ziraat");
-    Banks z2 = new Banks();
+    BankFactory z2 = new BankFactory();
     z2.setName("akbank");
-    z1.setBankBonus(100);
+    z1.setBankBonus(125);
     z2.setBankBonus(200);
 
     z1.giveBonus(erdo1);

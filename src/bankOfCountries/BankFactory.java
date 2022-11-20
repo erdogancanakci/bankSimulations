@@ -1,6 +1,6 @@
 package bankOfCountries;
 
-public class Banks implements Bank{
+public class BankFactory implements Bank{
     private String name;
     private int bankBonus;
 
