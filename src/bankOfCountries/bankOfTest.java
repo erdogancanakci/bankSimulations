@@ -2,15 +2,15 @@ package bankOfCountries;
 
 public class bankOfTest {
     public static void main(String[] args) {
-    Hitit hitit = new Hitit();
-    Linxa linxa = new Linxa();
-    hitit.setName("hitit");
-    linxa.setName("linxa");
+    CBA CBA = new CBA();
+    ABC ABC = new ABC();
+    CBA.setName("hitit");
+    ABC.setName("linxa");
 
-    WorkerPerson erdo1 = new WorkerPerson(hitit);
-    WorkerPerson erdo2 = new WorkerPerson(linxa);
-    WorkerPerson fatih = new WorkerPerson(hitit);
-    WorkerPerson furkan = new WorkerPerson(linxa);
+    WorkerPerson erdo1 = new WorkerPerson(CBA);
+    WorkerPerson erdo2 = new WorkerPerson(ABC);
+    WorkerPerson fatih = new WorkerPerson(CBA);
+    WorkerPerson furkan = new WorkerPerson(ABC);
 
     ZiraatBank ziraatBank = new ZiraatBank();
     AkBank akBank = new AkBank();

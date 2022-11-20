@@ -1,8 +1,9 @@
 package bankOfCountries;
 
-public class Linxa extends Company{
+public class CBA extends Company{
+
     @Override
     public int calculateCompanyBonus() {
-        return 50;
+        return 200;
     }
 }

@@ -1,9 +1,8 @@
 package bankOfCountries;
 
-public class Hitit extends Company{
-
+public class ABC extends Company{
     @Override
     public int calculateCompanyBonus() {
-        return 200;
+        return 50;
     }
 }
